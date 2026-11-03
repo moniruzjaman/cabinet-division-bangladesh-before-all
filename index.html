@@ -292,6 +292,7 @@ a{color:inherit}
     <div class="top-actions">
       <span class="chip"><i class="dot"></i> ADP FY 2026-27</span>
       <a class="btn btn-ghost" href="#proposal">Proposal</a>
+      <a class="btn btn-ghost" href="dpp.html">DPP (IMED format)</a>
       <a class="btn btn-gold" href="#seven-signatures">The Seven Signatures</a>
     </div>
   </div>
@@ -339,6 +340,7 @@ a{color:inherit}
       <a href="#seven-signatures"><i>05</i> Seven signatures</a>
       <a href="#stack"><i>06</i> Digital stack</a>
       <a href="#proposal"><i>07</i> The proposal</a>
+      <a href="dpp.html"><i>DPP</i> IMED format</a>
       <a href="#governance"><i>08</i> Governance</a>
     </div>
   </div>
@@ -624,12 +626,36 @@ a{color:inherit}
     <div class="sec-head">
       <div class="sec-no">07 · THE PROPOSAL</div>
       <h2>The formal Cabinet Division project proposal</h2>
-      <p class="lead">A 19-page formal proposal derived from the KIFGP Development Project Proforma, structured to IMED format: cover, executive summary, table of contents, 13 chapters and six annexures. Available as .docx and .pdf in <code>docs/proposal/</code>.</p>
+      <p class="lead">Two ways to read the same project. The <b>interactive DPP</b> below renders the full IMED-format Development Project Proforma as a navigable web page — Part A (summary), Part B (details) and Annexures A–H, with animated indicators, a budget lens switcher, a LogFrame visualisation and a risk heat-grid. The signed <b>19-page PDF/DOCX</b> is the authoritative copy for submission.</p>
     </div>
+
+    <!-- interactive DPP card -->
+    <div style="background:linear-gradient(135deg,var(--g950),var(--g800));border:1px solid rgba(212,175,94,.3);border-radius:14px;padding:28px 30px;box-shadow:var(--shadow);margin-bottom:18px;position:relative;overflow:hidden">
+      <div style="position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(212,175,94,.16),transparent 65%);pointer-events:none"></div>
+      <div style="position:relative;display:flex;gap:24px;align-items:center;flex-wrap:wrap">
+        <div style="flex:1;min-width:240px">
+          <div class="pn" style="color:var(--gold);font-family:var(--serif);font-weight:900;font-size:12px;letter-spacing:.28em;text-transform:uppercase">Interactive · IMED Format · Read online</div>
+          <h3 style="font-family:var(--serif);font-weight:900;font-size:24px;color:var(--gold2);margin:8px 0 6px">Development Project Proforma (DPP) — KIFGP</h3>
+          <p style="color:rgba(238,243,233,.82);font-size:14.5px;line-height:1.6">The complete proforma as a single navigable page: <b>Part A</b> (project summary, §1–9) · <b>Part B</b> (project details, §10–25) · <b>Annexures A–H</b>. Built for easy understanding — animated headline counters, a sticky scroll-spy table of contents, a three-way budget lens (by component / by year / by source), a LogFrame progress visualisation, a risk heat-grid, and collapsible annexures. Print-ready (one click → Save as PDF).</p>
+          <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
+            <span style="font-size:11.5px;font-weight:800;letter-spacing:.06em;color:var(--g950);background:var(--gold);padding:5px 11px;border-radius:6px">25 sections</span>
+            <span style="font-size:11.5px;font-weight:800;letter-spacing:.06em;color:var(--gold2);background:rgba(0,0,0,.25);border:1px solid rgba(212,175,94,.3);padding:5px 11px;border-radius:6px">8 annexures</span>
+            <span style="font-size:11.5px;font-weight:800;letter-spacing:.06em;color:var(--gold2);background:rgba(0,0,0,.25);border:1px solid rgba(212,175,94,.3);padding:5px 11px;border-radius:6px">17 tables</span>
+            <span style="font-size:11.5px;font-weight:800;letter-spacing:.06em;color:var(--gold2);background:rgba(0,0,0,.25);border:1px solid rgba(212,175,94,.3);padding:5px 11px;border-radius:6px">Bengali + English</span>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;min-width:200px">
+          <a class="btn btn-gold" href="dpp.html">Open the interactive DPP →</a>
+          <a class="btn btn-ghost" href="dpp.html#annex" style="border-color:rgba(212,175,94,.5);color:var(--gold2)">Jump to annexures</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- signed PDF/DOCX card -->
     <div style="background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px 30px;box-shadow:var(--shadow)">
       <div style="display:flex;gap:24px;align-items:center;flex-wrap:wrap">
         <div style="flex:1;min-width:240px">
-          <div class="pn" style="color:var(--goldD);font-family:var(--serif);font-weight:900;font-size:12px;letter-spacing:.28em;text-transform:uppercase">Cabinet Division · KIFGP</div>
+          <div class="pn" style="color:var(--goldD);font-family:var(--serif);font-weight:900;font-size:12px;letter-spacing:.28em;text-transform:uppercase">Cabinet Division · KIFGP · Authoritative copy</div>
           <h3 style="font-family:var(--serif);font-weight:900;font-size:24px;color:var(--g800);margin:8px 0 6px">Bangladesh Before All — Project Proposal</h3>
           <p style="color:var(--muted);font-size:14.5px;line-height:1.6">Kurigram Integrated Fertilizer Governance &amp; Farmer Card Pilot. Tk 3,949.6 lakh · 36 months · ADP FY 2026-27. 13 chapters + 6 annexures: Introduction, Problem Analysis, Objectives, Solution Architecture, Implementation Roadmap, Budget, Governance, Risk, Economic Analysis, M&amp;E, Digital Stack, Sustainability, Conclusion.</p>
           <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap">
@@ -711,6 +737,7 @@ a{color:inherit}
     <div>
       <h5>Repository</h5>
       <ul>
+        <li><a href="dpp.html">Interactive DPP (IMED format)</a></li>
         <li><a href="docs/proposal/Cabinet_Division_KIFGP_Proposal.pdf">Proposal (PDF)</a></li>
         <li><a href="docs/proposal/Cabinet_Division_KIFGP_Proposal.docx">Proposal (.docx)</a></li>
         <li><a href="README.md">README</a></li>
