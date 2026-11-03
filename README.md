@@ -1,5 +1,8 @@
 # Bangladesh Before All — Cabinet Division Fertilizer Governance Reform Portal
 
+[![Deploy to GitHub Pages](https://github.com/moniruzjaman/cabinet-division-bangladesh-before-all/actions/workflows/deploy.yml/badge.svg)](https://github.com/moniruzjaman/cabinet-division-bangladesh-before-all/actions/workflows/deploy.yml)
+[![Live portal](https://img.shields.io/badge/portal-live-brightgreen)](https://moniruzjaman.github.io/cabinet-division-bangladesh-before-all/)
+
 **সবার আগে বাংলাদেশ · Bangladesh Before All**
 
 A unified, professional-grade repository for the **Cabinet Division, Government of the People's Republic of Bangladesh**, combining four source workstreams on fertilizer distribution reform under one Cabinet-level mandate. It hosts the flagship **Kurigram Integrated Fertilizer Governance & Farmer Card Pilot (KIFGP)** — a Tk 3,949.6 lakh, 36-month initiative that converts Bangladesh's ~Tk 17,001 crore annual fertilizer subsidy from a channel of chronic leakage into a verified, auditable, farmer-facing system.
@@ -13,7 +16,7 @@ A unified, professional-grade repository for the **Cabinet Division, Government 
 | **Project code (proposed)** | MoA / DAE / KUR / 2026-27 / 01 |
 | **ADP cycle** | FY 2026-27 |
 | **Classification** | OFFICIAL |
-| **Live portal** | _deploy this repo to GitHub Pages (see [Deployment](#deployment))_ |
+| **Live portal** | 🔗 https://moniruzjaman.github.io/cabinet-division-bangladesh-before-all/ |
 
 ---
 
@@ -96,25 +99,15 @@ The proposal resolves to **seven signatures requiring no new legislation and a s
 
 ## Deployment
 
-This repository is set up for **GitHub Pages**. To publish the portal:
+The portal is **deployed and live** via GitHub Actions, automatically redeployed on every push to `main`.
 
-1. Create a new (empty) repository on GitHub, e.g. `cabinet-division-bangladesh-before-all`.
-2. Push this directory's contents to `main`:
+- **Live URL:** 🔗 https://moniruzjaman.github.io/cabinet-division-bangladesh-before-all/
+- **Build workflow:** [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
+- **Run history:** [Actions tab](https://github.com/moniruzjaman/cabinet-division-bangladesh-before-all/actions)
 
-   ```bash
-   cd cabinet-division-bangladesh-before-all
-   git init
-   git add .
-   git commit -m "Initial commit: combined Cabinet Division fertilizer governance reform portal"
-   git branch -M main
-   git remote add origin git@github.com:<your-org>/cabinet-division-bangladesh-before-all.git
-   git push -u origin main
-   ```
+The workflow uploads the repository root (the `index.html` portal, the `docs/` deliverables, and the vendored `reference-repos/`) as the Pages artifact and deploys it. The `index.html` portal is fully self-contained — inline CSS and JS, no build step, no CDN — and the proposal PDF/DOCX committed under `docs/proposal/` are directly downloadable from the portal's "The proposal" section.
 
-3. In the repository's **Settings → Pages**, set **Source** to **GitHub Actions**.
-4. The `.github/workflows/deploy.yml` workflow will deploy the repo root (the `index.html` portal plus the `docs/` deliverables and `reference-repos/`) to GitHub Pages on every push to `main`.
-
-The portal at `index.html` is fully self-contained (inline CSS and JS, no build step, no CDN) and the proposal PDF/DOCX are committed under `docs/proposal/`, so they are directly downloadable from the portal.
+**If the workflow is ever disabled or Pages is reset**, the `configure-pages` step has `enablement: true`, so the next run will re-enable Pages in GitHub Actions mode automatically. To redeploy on demand without a code change, use *Actions → "Deploy Cabinet Division Portal to GitHub Pages" → Run workflow*.
 
 ---
 
