@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Bangladesh Before All emblem">
+  <rect width="64" height="64" rx="12" fill="#051d15"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="10.5" fill="none" stroke="#d4af5e" stroke-opacity="0.55" stroke-width="1.2"/>
+  <path d="M32 12c-1 6-5 10-9 12 4 2 8 6 9 12 1-6 5-10 9-12-4-2-8-6-9-12z" fill="#d4af5e"/>
+  <path d="M20 40c2 6 6 10 12 12 6-2 10-6 12-12-4 2-8 4-12 4s-8-2-12-4z" fill="#3DDBB5"/>
+</svg>

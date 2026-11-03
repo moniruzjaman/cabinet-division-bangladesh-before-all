@@ -6,7 +6,55 @@
 <title>Bangladesh Before All — Cabinet Division Fertilizer Governance Reform Portal</title>
 <meta name="description" content="Cabinet Division, Government of Bangladesh — the flagship portal for the Kurigram Integrated Fertilizer Governance &amp; Farmer Card Pilot (KIFGP) and the national fertilizer distribution reform portfolio.">
 <meta name="author" content="Cabinet Division, Government of the People's Republic of Bangladesh">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230C1F1A'/%3E%3Cpath d='M32 12c-1 6-5 10-9 12 4 2 8 6 9 12 1-6 5-10 9-12-4-2-8-6-9-12z' fill='%23D4AF5E'/%3E%3Cpath d='M20 40c2 6 6 10 12 12 6-2 10-6 12-12-4 2-8 4-12 4s-8-2-12-4z' fill='%233DDBB5'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#051d15">
+
+<!-- ===== Favicon set ===== -->
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="assets/img/favicon.svg" color="#d4af5e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Bangladesh Before All">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="application-name" content="Bangladesh Before All">
+<meta name="msapplication-TileColor" content="#051d15">
+<meta name="msapplication-config" content="browserconfig.xml">
+<meta name="msapplication-tooltip" content="Cabinet Division Fertilizer Governance Reform Portal">
+
+<!-- ===== Open Graph / social preview ===== -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bangladesh Before All — Cabinet Division Portal">
+<meta property="og:title" content="Bangladesh Before All — Fertilizer Governance Reform Portal">
+<meta property="og:description" content="Cabinet Division, Government of Bangladesh: converting a Tk 17,001 crore fertilizer subsidy from a channel of leakage into a verified, auditable, farmer-facing system. KIFGP — Tk 3,949.6L, 566,202 farm families, 6–7:1 BCR.">
+<meta property="og:url" content="https://moniruzjaman.github.io/cabinet-division-bangladesh-before-all/">
+<meta property="og:image" content="https://moniruzjaman.github.io/cabinet-division-bangladesh-before-all/assets/img/og-image.png">
+<meta property="og:image:secure_url" content="https://moniruzjaman.github.io/cabinet-division-bangladesh-before-all/assets/img/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bangladesh Before All — Cabinet Division Fertilizer Governance Reform Portal. Bengali tagline: সবার আগে বাংলাদেশ.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="bn_BD">
+
+<!-- ===== Twitter / X card ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bangladesh Before All — Fertilizer Governance Reform Portal">
+<meta name="twitter:description" content="Cabinet Division, Government of Bangladesh: converting a Tk 17,001 crore fertilizer subsidy into a verified, farmer-facing system. KIFGP — Tk 3,949.6L, 566,202 farm families, 6–7:1 BCR.">
+<meta name="twitter:image" content="https://moniruzjaman.github.io/cabinet-division-bangladesh-before-all/assets/img/og-image.png">
+<meta name="twitter:image:alt" content="Bangladesh Before All — Cabinet Division Fertilizer Governance Reform Portal">
+<meta name="twitter:site" content="@CabinetDivisionBD">
+<meta name="twitter:creator" content="@moniruzjaman">
+
+<!-- ===== Additional platform hints ===== -->
+<link rel="canonical" href="https://moniruzjaman.github.io/cabinet-division-bangladesh-before-all/">
+<link rel="image_src" href="assets/img/og-image.png">
+<meta name="thumbnail" content="assets/img/og-image.png">
+<meta name="robots" content="index, follow">
+<meta name="format-detection" content="telephone=no">
 <style>
 :root{
   --g950:#051d15; --g900:#07271c; --g800:#0b3a29; --g700:#115239; --g600:#17684a; --g500:#1f7d59;
@@ -150,6 +198,82 @@ a{color:inherit}
 @media (max-width:860px){
   .hero-stats,.pillar-grid,.card-grid,.budget-wrap,.foot-in{grid-template-columns:1fr}
   .top-actions .btn-ghost{display:none}
+}
+
+/* ============ ACTION TOOLBAR (Print / Download / Translate / Share) ============ */
+.atb{position:fixed;right:22px;bottom:22px;z-index:80;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.atb-fab{width:58px;height:58px;border-radius:50%;border:none;cursor:pointer;background:linear-gradient(160deg,var(--gold2),var(--gold));color:var(--g900);box-shadow:0 14px 30px -8px rgba(212,175,94,.85),0 4px 10px rgba(7,39,28,.45);display:flex;align-items:center;justify-content:center;transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .25s}
+.atb-fab svg{width:26px;height:26px;transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
+.atb-fab:hover{transform:translateY(-2px) scale(1.04)}
+.atb.open .atb-fab{transform:rotate(135deg)}
+.atb-fab:focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
+
+.atb-panel{display:flex;flex-direction:column;gap:8px;background:rgba(5,29,21,.96);backdrop-filter:blur(14px);border:1px solid rgba(212,175,94,.35);border-radius:16px;padding:12px;box-shadow:var(--shadow);width:248px;max-height:0;overflow:hidden;opacity:0;transform:translateY(8px) scale(.96);transform-origin:bottom right;pointer-events:none;transition:max-height .35s ease,opacity .25s ease,transform .25s ease}
+.atb.open .atb-panel{max-height:520px;opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
+.atb-head{font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);padding:2px 6px 6px;border-bottom:1px solid rgba(212,175,94,.2);margin-bottom:4px}
+.atb-btn{display:flex;align-items:center;gap:11px;width:100%;background:transparent;border:1px solid transparent;color:var(--gold2);font-family:var(--sans);font-size:13.5px;font-weight:600;text-align:left;padding:10px 12px;border-radius:10px;cursor:pointer;transition:.18s}
+.atb-btn svg{width:18px;height:18px;flex:none;color:var(--gold)}
+.atb-btn:hover{background:rgba(212,175,94,.12);border-color:rgba(212,175,94,.3);color:#fff}
+.atb-btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.atb-btn small{display:block;font-size:10.5px;font-weight:500;color:rgba(240,212,146,.6);letter-spacing:.02em;margin-top:1px}
+
+/* Translate sub-menu */
+.atb-lang{display:none;flex-direction:column;gap:2px;margin-left:22px;margin-top:2px}
+.atb.open.lang-open .atb-lang{display:flex}
+.atb-lang button{background:transparent;border:none;color:rgba(238,243,233,.78);font-size:12.5px;font-weight:500;text-align:left;padding:6px 10px;border-radius:7px;cursor:pointer;font-family:var(--sans)}
+.atb-lang button:hover{background:rgba(212,175,94,.12);color:var(--gold2)}
+.atb-lang button.active{color:var(--gold2);font-weight:700}
+
+/* Share sub-menu */
+.atb-share{display:none;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:4px}
+.atb.open.share-open .atb-share{display:grid}
+.atb-share a{display:flex;flex-direction:column;align-items:center;gap:5px;background:rgba(255,255,255,.04);border:1px solid rgba(212,175,94,.18);color:var(--gold2);font-size:10.5px;font-weight:600;text-decoration:none;padding:9px 4px;border-radius:9px;cursor:pointer;transition:.18s}
+.atb-share a:hover{background:rgba(212,175,94,.16);border-color:rgba(212,175,94,.5);color:#fff;transform:translateY(-1px)}
+.atb-share a svg{width:20px;height:20px}
+
+/* Download sub-menu */
+.atb-dl{display:none;flex-direction:column;gap:3px;margin-left:22px;margin-top:2px}
+.atb.open.dl-open .atb-dl{display:flex}
+.atb-dl a{display:flex;align-items:center;gap:8px;background:transparent;border:none;color:rgba(238,243,233,.82);font-size:12.5px;font-weight:500;text-align:left;padding:6px 10px;border-radius:7px;cursor:pointer;text-decoration:none}
+.atb-dl a:hover{background:rgba(212,175,94,.12);color:var(--gold2)}
+.atb-dl a svg{width:14px;height:14px;color:var(--gold)}
+
+/* Backdrop for closing on outside click */
+.atb-backdrop{position:fixed;inset:0;z-index:70;background:transparent;opacity:0;pointer-events:none;transition:opacity .2s}
+.atb-backdrop.show{opacity:1;pointer-events:auto}
+
+/* Toast (copy-link feedback) */
+.atb-toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%) translateY(20px);background:var(--g900);color:var(--gold2);border:1px solid rgba(212,175,94,.45);padding:11px 22px;border-radius:999px;font-size:13px;font-weight:600;z-index:90;opacity:0;pointer-events:none;transition:.3s;box-shadow:var(--shadow)}
+.atb-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media (max-width:560px){
+  .atb{right:14px;bottom:14px}
+  .atb-fab{width:52px;height:52px}
+  .atb-panel{width:220px}
+}
+
+/* ============ PRINT ============ */
+@media print{
+  .topbar,.hero-art,.hero-glow,.toc,.atb,.atb-backdrop,.atb-toast,.hero-cta{display:none !important}
+  .hero{padding:24px 0 18px;color:#000;background:#fff !important}
+  .hero h1,.hero .sub,.hero-meta,.hero-stats{color:#000 !important}
+  .hero h1 em{color:#000}
+  .hero-stats{background:#000 !important}
+  .hstat{background:#fff !important;border:1px solid #ccc}
+  .hstat b{color:#000}
+  .hstat span{color:#333}
+  .badge-bn,.mchip{color:#000 !important;border-color:#999 !important;background:#fff !important}
+  body{background:#fff;color:#000;font-size:11pt;line-height:1.5}
+  .sec{padding:18px 0 !important;page-break-inside:avoid}
+  .sec-dark{background:#fff !important}
+  .sec-dark *{color:#000 !important}
+  .card,.hstat{box-shadow:none !important;border:1px solid #ccc !important;page-break-inside:avoid}
+  a{color:#000;text-decoration:none}
+  a[href]:after{content:" (" attr(href) ")";font-size:9pt;color:#555}
+  a[href^="#"]:after,a[href^="javascript"]:after{content:""}
+  .foot{background:#fff !important;color:#000}
+  .foot *{color:#000 !important}
+  .foot-bottom{border-top:1px solid #999}
 }
 </style>
 </head>
@@ -601,6 +725,245 @@ a{color:inherit}
     <span>Project Code: MoA / DAE / KUR / 2026-27 / 01 · Built from four source repositories under one Cabinet mandate</span>
   </div>
 </footer>
+
+<!-- ===== ACTION TOOLBAR: Print · Download · Translate · Share ===== -->
+<div class="atb-backdrop" id="atbBackdrop" aria-hidden="true"></div>
+<aside class="atb" id="actionToolbar" aria-label="Page actions">
+  <div class="atb-panel" role="menu" aria-label="Print, download, translate or share this page">
+    <div class="atb-head">Quick actions</div>
+
+    <button class="atb-btn" type="button" data-act="print">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8" rx="1"/></svg>
+      <span>Print this page<small>Save as PDF or print</small></span>
+    </button>
+
+    <button class="atb-btn" type="button" data-act="toggle-download">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <span>Download<small>Proposal PDF, DOCX &amp; Markdown</small></span>
+    </button>
+    <div class="atb-dl" id="atbDownload">
+      <a href="docs/proposal/Cabinet_Division_KIFGP_Proposal.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Proposal — PDF
+      </a>
+      <a href="docs/proposal/Cabinet_Division_KIFGP_Proposal.docx" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Proposal — DOCX
+      </a>
+      <a href="docs/proposal/PROJECT_PROPOSAL.md" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Proposal — Markdown
+      </a>
+      <a href="README.md" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        README
+      </a>
+    </div>
+
+    <button class="atb-btn" type="button" data-act="toggle-translate">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7"/><path d="M9 3v2c0 4.418-2.239 8-5 8"/><path d="M5 9c0 2.144 2.952 3.908 6.7 4"/><path d="M12 20l4-9 4 9"/><path d="M19.1 18h-6.2"/></svg>
+      <span>Translate<small id="atbLangLabel">Choose language</small></span>
+    </button>
+    <div class="atb-lang" id="atbLangs">
+      <button type="button" data-lang="en" class="active">English (original)</button>
+      <button type="button" data-lang="bn">বাংলা — Bengali</button>
+      <button type="button" data-lang="hi">हिन्दी — Hindi</button>
+      <button type="button" data-lang="ar">العربية — Arabic</button>
+      <button type="button" data-lang="ur">اردو — Urdu</button>
+      <button type="button" data-lang="fr">Français — French</button>
+      <button type="button" data-lang="es">Español — Spanish</button>
+      <button type="button" data-lang="zh-CN">中文 — Chinese</button>
+    </div>
+
+    <button class="atb-btn" type="button" data-act="toggle-share">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>
+      <span>Share<small>Via web, social or copy link</small></span>
+    </button>
+    <div class="atb-share" id="atbShare">
+      <a data-share="native" href="#" title="Share via device">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+        Device
+      </a>
+      <a data-share="whatsapp" href="#" title="Share on WhatsApp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.42 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42-.14 0-.31-.02-.47-.02-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+        WhatsApp
+      </a>
+      <a data-share="facebook" href="#" title="Share on Facebook" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+        Facebook
+      </a>
+      <a data-share="x" href="#" title="Share on X" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        X
+      </a>
+      <a data-share="linkedin" href="#" title="Share on LinkedIn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        LinkedIn
+      </a>
+      <a data-share="telegram" href="#" title="Share on Telegram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.5.5 0 0 1 .17.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.259-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.329-.913.49-1.302.48-.428-.008-1.252-.242-1.865-.442-.752-.244-1.349-.374-1.297-.789.027-.216.322-.437.887-.662 3.481-1.517 5.802-2.518 6.965-3.002 3.316-1.38 4.005-1.623 4.456-1.631z"/></svg>
+        Telegram
+      </a>
+      <a data-share="email" href="#" title="Share via Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email
+      </a>
+      <a data-share="copy" href="#" title="Copy link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        Copy link
+      </a>
+    </div>
+  </div>
+
+  <button class="atb-fab" type="button" id="atbFab" aria-label="Open quick actions: print, download, translate, share" aria-expanded="false" aria-controls="actionToolbar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+  </button>
+</aside>
+
+<div class="atb-toast" id="atbToast" role="status" aria-live="polite"></div>
+
+<!-- Hidden Google Translate host (page-language en; auto-translates when googtrans cookie is set) -->
+<div id="google_translate_element" style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true"></div>
+<script>
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'en,bn,hi,ar,ur,fr,es,zh-CN',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+
+<script>
+/* ===== Action toolbar logic ===== */
+(function(){
+  "use strict";
+  var root = document.getElementById('actionToolbar');
+  var fab  = document.getElementById('atbFab');
+  var backdrop = document.getElementById('atbBackdrop');
+  var toastEl = document.getElementById('atbToast');
+  var url   = location.href.split('#')[0].split('?')[0];
+  var title = document.title;
+  var desc  = (document.querySelector('meta[name="description"]')||{}).content || title;
+  var subMenus = ['lang-open','share-open','dl-open'];
+
+  function open(){ root.classList.add('open'); fab.setAttribute('aria-expanded','true'); backdrop.classList.add('show'); }
+  function close(){ root.classList.remove('open'); fab.setAttribute('aria-expanded','false'); backdrop.classList.remove('show'); subMenus.forEach(function(c){root.classList.remove(c);}); }
+  function toggle(){ root.classList.contains('open') ? close() : open(); }
+  function closeSubs(){ subMenus.forEach(function(c){root.classList.remove(c);}); }
+
+  fab.addEventListener('click', function(e){ e.stopPropagation(); toggle(); });
+  backdrop.addEventListener('click', close);
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toast._t);
+    toast._t = setTimeout(function(){ toastEl.classList.remove('show'); }, 2400);
+  }
+
+  /* ---- action routing ---- */
+  root.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-act]');
+    if(!btn) return;
+    e.stopPropagation();
+    var act = btn.getAttribute('data-act');
+
+    if(act === 'print'){ close(); setTimeout(function(){ window.print(); }, 280); return; }
+
+    if(act === 'toggle-download'){
+      var dlOpen = root.classList.contains('dl-open');
+      closeSubs();
+      if(!dlOpen) root.classList.add('dl-open');
+      return;
+    }
+    if(act === 'toggle-translate'){
+      var lOpen = root.classList.contains('lang-open');
+      closeSubs();
+      if(!lOpen) root.classList.add('lang-open');
+      return;
+    }
+    if(act === 'toggle-share'){
+      var sOpen = root.classList.contains('share-open');
+      closeSubs();
+      if(!sOpen){
+        root.classList.add('share-open');
+        if(navigator.share){
+          // device supports native share — surface it as the primary action
+        }
+      }
+      return;
+    }
+  });
+
+  /* ---- language buttons: set googtrans cookie, reload; widget auto-translates ---- */
+  var langButtons = root.querySelectorAll('.atb-lang button');
+  var langLabel = document.getElementById('atbLangLabel');
+  langButtons.forEach(function(b){
+    b.addEventListener('click', function(){
+      var lang = b.getAttribute('data-lang');
+      langButtons.forEach(function(x){ x.classList.remove('active'); });
+      b.classList.add('active');
+      if(langLabel) langLabel.textContent = b.textContent.trim();
+      // clear any existing googtrans cookie on this path and the dot-domain variant
+      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
+      document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + location.hostname;
+      if(lang !== 'en'){
+        var host = location.hostname;
+        document.cookie = 'googtrans=/en/' + lang + '; path=/';
+        document.cookie = 'googtrans=/en/' + lang + '; path=/; domain=' + host;
+        document.cookie = 'googtrans=/en/' + lang + '; path=/; domain=.' + host;
+      }
+      location.reload();
+    });
+  });
+
+  /* ---- share targets ---- */
+  var shareLinks = root.querySelectorAll('.atb-share a');
+  shareLinks.forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var kind = a.getAttribute('data-share');
+      var u = encodeURIComponent(url);
+      var t = encodeURIComponent(title);
+      var d = encodeURIComponent(desc);
+      var href = '';
+      switch(kind){
+        case 'whatsapp': href = 'https://api.whatsapp.com/send?text=' + t + '%20' + u; break;
+        case 'facebook': href = 'https://www.facebook.com/sharer/sharer.php?u=' + u + '&quote=' + t; break;
+        case 'x':        href = 'https://twitter.com/intent/tweet?text=' + t + '&url=' + u; break;
+        case 'linkedin': href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + u; break;
+        case 'telegram': href = 'https://t.me/share/url?url=' + u + '&text=' + t; break;
+        case 'email':    href = 'mailto:?subject=' + t + '&body=' + d + '%0A%0A' + u; break;
+        case 'copy':
+          copyLink(); return;
+        case 'native':
+          if(navigator.share){ navigator.share({title:title, text:desc, url:url}).catch(function(){}); }
+          else { copyLink(); }
+          return;
+      }
+      if(href) window.open(href, '_blank', 'noopener,width=620,height=540');
+    });
+  });
+
+  function copyLink(){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){ toast('✓ Link copied to clipboard'); }, function(){ fallbackCopy(url); });
+    } else { fallbackCopy(url); }
+  }
+  function fallbackCopy(text){
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); toast('✓ Link copied to clipboard'); }
+    catch(_){ toast('Copy failed — select the URL bar manually'); }
+    document.body.removeChild(ta);
+  }
+})();
+</script>
 
 </body>
 </html>

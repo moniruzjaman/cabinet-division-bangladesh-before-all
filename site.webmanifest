@@ -1,0 +1,26 @@
+{
+  "name": "Bangladesh Before All — Cabinet Division Fertilizer Governance Reform Portal",
+  "short_name": "Bangladesh Before All",
+  "description": "Cabinet Division, Government of Bangladesh — the flagship portal for the Kurigram Integrated Fertilizer Governance & Farmer Card Pilot (KIFGP) and the national fertilizer distribution reform portfolio.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#051d15",
+  "theme_color": "#051d15",
+  "categories": ["government", "agriculture", "public-policy"],
+  "icons": [
+    { "src": "assets/img/favicon-96x96.png",  "sizes": "96x96",   "type": "image/png", "purpose": "any" },
+    { "src": "assets/img/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/img/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/img/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "Read the Cabinet proposal", "url": "./#proposal" },
+    { "name": "The seven signatures", "url": "./#seven-signatures" },
+    { "name": "Download proposal PDF", "url": "./docs/proposal/Cabinet_Division_KIFGP_Proposal.pdf" }
+  ]
+}
