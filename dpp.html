@@ -418,7 +418,7 @@ footer p{font-size:12.5px;margin-bottom:8px;line-height:1.6}
 
 <section id="s10"><h3><span class="n">10.</span>Background &amp; Rationale <span class="bn">পটভূমি</span></h3>
 <p><b>Existing journey.</b> Import / BADC stores → dealer network → farmers, validated informally by SAAO recommendation, familiar face, NID or paper card. Result: unrecorded sales, artificial scarcity (Kurigram Sadar lifted one-third of allocated urea in Aug 2025), black-market premiums, and a subsidy benefit distribution in which the bottom 40% of farmers receive ~15% (World Bank).</p>
-<p><b>Proposed journey.</b> Import / BADC → local server + biometric PoS → farmer's hands. Authentication by <b>fingerprint match (PoS + upazila local server)</b> plus <b>crop declaration and land-parcel validation</b> against BDS/EDLMS. Subsidy releases only on a verified sale (India DBT-PoS model: 287,000 retailers, 84 crore farmers, no-denial since 2018). Every kilogram is traceable on a permissioned blockchain ledger with a public dashboard.</p>
+<p><b>Proposed journey.</b> Import / BADC → local server + biometric PoS (mandatory <b>e-KYC</b>: NID biometric verification before Farmer Card issuance; FC household খানা definition with land thresholds Marginal ≤50 / Small 50–500 / Medium 500–1,500 / Large &gt;1,500 শতাংশ) → farmer's hands, each sale confirmed by a <b>farmer-facing QR-code receipt</b> at the <b>GPS geo-tagged</b> outlet. Authentication by <b>fingerprint match (PoS + upazila local server)</b> plus <b>crop declaration and land-parcel validation</b> against BDS/EDLMS. Subsidy releases only on a verified sale (India DBT-PoS model: 287,000 retailers, 84 crore farmers, no-denial since 2018). Every kilogram is traceable on a permissioned blockchain ledger — <b>backward (import → warehouse → dealer)</b> and <b>forward (dealer → application → yield)</b> — with a public dashboard.</p>
 <p><b>Why Kurigram first.</b> The district is a surplus food producer (537,543 MT in 2024-25) with proven absorptive capacity: BRRI dhan 100+ scaled 36× (aman 90 → 3,289 ha), boro 6,362 → 20,350 ha in two years; AWD on 12,350 ha saving 30% irrigation water; 51 Farmer Service Centres holding Tk 12,40,000; 50 t mango exported; 959 rabi demonstrations delivered at 100% in 2025-26. It also concentrates the hardest cases — 382 chars, flash floods rising 50 cm in 24 hours — so a system that works here works anywhere.</p></section>
 
 <section id="s11"><h3><span class="n">11.</span>Problem &amp; Needs Analysis <span class="bn">সমস্যা বিশ্লেষণ</span></h3>
@@ -450,15 +450,15 @@ footer p{font-size:12.5px;margin-bottom:8px;line-height:1.6}
 
 <section id="s14"><h3><span class="n">14.</span>Target Group &amp; Beneficiaries <span class="bn">সুবিধাভোগী</span></h3>
 <table>
-<tr><th>Category</th><th class="r">Count</th><th>Basis</th></tr>
-<tr><td>Farm families (excl. sharecroppers)</td><td class="r">508,493</td><td>DAE research workshop census</td></tr>
-<tr><td>Sharecroppers</td><td class="r">57,709</td><td>same</td></tr>
-<tr class="tot"><td>Total Farmer Card enrolment</td><td class="r">566,202</td><td>C3</td></tr>
-<tr><td>Landless families</td><td class="r">71,591 (14.07%)</td><td>livestock / horticulture pathways</td></tr>
-<tr><td>Landholding families receiving digital SHC</td><td class="r">436,902</td><td>C4</td></tr>
-<tr><td>Marginal / small / medium / large</td><td class="r">182,319 / 206,382 / 45,708 / 2,493</td><td>targeting weights favour marginal+small = 76.4%</td></tr>
-<tr><td>Lead farmers / dealers' staff / SAAOs trained</td><td class="r">56,620 / 214 / 187</td><td>C5</td></tr>
-<tr><td>Direct jobs created</td><td class="r">≈450</td><td>PoS techs 116, block digital agents 219, SIP caretakers 107, PMU 14</td></tr>
+<tr><th>Category</th><th class="r">Count</th><th>Basis</th><th>Land threshold (শতাংশ)</th></tr>
+<tr><td>Farm families (excl. sharecroppers)</td><td class="r">508,493</td><td>DAE research workshop census</td><td>—</td></tr>
+<tr><td>Sharecroppers</td><td class="r">57,709</td><td>same</td><td>—</td></tr>
+<tr class="tot"><td>Total Farmer Card enrolment (khana খানা, per FC household definition)</td><td class="r">566,202</td><td>C3 · e-KYC verified before issuance</td><td>—</td></tr>
+<tr><td>Landless families</td><td class="r">71,591 (14.07%)</td><td>livestock / horticulture pathways</td><td>—</td></tr>
+<tr><td>Landholding families receiving digital SHC</td><td class="r">436,902</td><td>C4</td><td>—</td></tr>
+<tr><td>Marginal / small / medium / large</td><td class="r">182,319 / 206,382 / 45,708 / 2,493</td><td>targeting weights favour marginal+small = 76.4%</td><td>≤50 / 50–500 / 500–1,500 / &gt;1,500</td></tr>
+<tr><td>Lead farmers / dealers' staff / SAAOs trained</td><td class="r">56,620 / 214 / 187</td><td>C5</td><td>—</td></tr>
+<tr><td>Direct jobs created</td><td class="r">≈450</td><td>PoS techs 116, block digital agents 219, SIP caretakers 107, PMU 14</td><td>—</td></tr>
 </table></section>
 
 <section id="s15"><h3><span class="n">15.</span>Components &amp; Activities <span class="bn">প্রকল্প উপকরণ</span></h3>
@@ -477,14 +477,14 @@ footer p{font-size:12.5px;margin-bottom:8px;line-height:1.6}
     <tr><th>#</th><th>Component &amp; principal activities</th><th class="r">Tk lakh</th></tr>
     <tr><td>C1</td><td><b>Digital infrastructure.</b> 116 biometric PoS terminals (107 outlets + 9 spares) @ Tk 45,000; 9 upazila local-server nodes @ Tk 3.5 lakh; district mirror + permissioned-blockchain ledger node Tk 18.0 lakh.</td><td class="r">101.7</td></tr>
     <tr><td>C2</td><td><b>Software stack.</b> Dealer app (offline-first, Bangla voice UI, e-Bill integration); farmer USSD/SMS + app; officer dashboard; policy engine (AI demand forecasting, BADC MIS). Dev Tk 160.0 + 2-yr O&amp;M Tk 60.0.</td><td class="r">220.0</td></tr>
-    <tr><td>C3</td><td><b>Farmer Card enrolment.</b> Field verification, biometric capture, NID match, BDS/EDLMS parcel linkage, card issuance via UP single-window desks: 566,202 × Tk 100.</td><td class="r">566.2</td></tr>
+    <tr><td>C3</td><td><b>Farmer Card enrolment.</b> Field verification (Kobo Toolbox/ODK capture; four-tier validation UP → Upazila → District → National), mandatory e-KYC — NID biometric verification before card issuance, FC household (খানা) definition with land thresholds Marginal ≤50 / Small 50–500 / Medium 500–1,500 / Large &gt;1,500 শতাংশ, BDS/EDLMS parcel linkage, card issuance via UP single-window desks: 566,202 × Tk 100.</td><td class="r">566.2</td></tr>
     <tr><td>C4</td><td><b>Soil Health Grid.</b> 5,676 plain-grid + 4,403 char-grid + 1,008 QC = 11,087 full-profile tests @ Tk 1,500 (SRDI); 436,902 parcel-linked digital SHCs @ Tk 40 marginal.</td><td class="r">341.1</td></tr>
     <tr><td>C5</td><td><b>Capacity building.</b> 56,620 lead farmers × Tk 900; 187 SAAOs × Tk 8,000; 214 dealer staff × Tk 5,000.</td><td class="r">535.3</td></tr>
     <tr><td>C6</td><td><b>Modified 1M1S demonstrations.</b> 219 blocks × 2/yr × 3 yr = 1,314 demos @ Tk 25,000, inputs at market price.</td><td class="r">328.5</td></tr>
     <tr><td>C7</td><td><b>Advisory communications.</b> 16 SMS/USSD messages/farmer/yr (9.06M/yr) @ Tk 0.35 × 3 yr; soil-dose push; flood early-warning alerts.</td><td class="r">95.1</td></tr>
     <tr><td>C8</td><td><b>Char resilience.</b> 107 solar irrigation pumps @ Tk 3.5 lakh; 9 speedboats @ Tk 10 lakh; 100,000 char saplings @ Tk 60; BRRI dhan 111/114 seed banks.</td><td class="r">524.5</td></tr>
     <tr><td>C9</td><td><b>State-managed markets.</b> 9 collection centres (1/upazila) @ Tk 25 lakh: shed, weighbridge, cold room; buyer-farmer melas; GAP export cluster.</td><td class="r">225.0</td></tr>
-    <tr><td>C10</td><td><b>e-voucher / MFS gateway.</b> 436,902 families × Tk 15 × 2 Boro seasons; Tk 10,000 loan-waiver list administration.</td><td class="r">131.1</td></tr>
+    <tr><td>C10</td><td><b>e-Voucher / MFS gateway.</b> Crop-specific, land-linked digital instrument redeemable only at verified PoS terminals. 436,902 families × Tk 15 × 2 Boro seasons; Tk 10,000 loan-waiver list administration.</td><td class="r">131.1</td></tr>
     <tr><td>C11</td><td><b>Governance.</b> Independent oversight committee &amp; quarterly public hearings Tk 36.0; third-party performance audit Tk 105.0; baseline + endline surveys Tk 50.0.</td><td class="r">191.0</td></tr>
     <tr><td>C12</td><td><b>PMU &amp; logistics.</b> 14 staff × Tk 55,000/mo × 36 = 277.2; office, vehicles, operation 54.0.</td><td class="r">331.0</td></tr>
     <tr><td></td><td><b>Subtotal</b></td><td class="r">3,590.5</td></tr>
@@ -557,10 +557,11 @@ footer p{font-size:12.5px;margin-bottom:8px;line-height:1.6}
 
 <section id="s18"><h3><span class="n">18.</span>Financial Management, Disbursement &amp; Gates <span class="bn">আর্থিক ব্যবস্থাপনা</span></h3>
 <ul>
-<li><b>Funds flow:</b> ADP release → PMU designated account (iBAS/CGA rails); partner co-finance via programme account; in-kind logged at framework rates.</li>
+<li><b>Funds flow:</b> ADP release → PMU designated account (iBAS++ rails); subsidy disbursement via <b>NPSB TakaPay</b> interoperable switch (banks + MFS wallets), per FC Signed Guidelines dated 20 September 2026; partner co-finance via programme account; in-kind logged at framework rates.</li>
 <li><b>Gate 1 (end Y1):</b> 100% Farmer Card enrolment verified + ≥95% transaction capture at live outlets → releases Y2 tranche.</li>
 <li><b>Gate 2 (end Y2):</b> leakage-detection alerts operational + ≥50% parcel-SHC linkage + ≥60% PoS sales share → releases Y3 tranche.</li>
 <li><b>Real-time audit:</b> every payment event on ledger; monthly reconciliation with BADC MIS; quarterly unaudited financial reports to Finance Division; annual audit by C&amp;AG plus independent performance audit (C11).</li>
+<li><b>Data Governance (FC Signed 20.9.26):</b> four-tier classification — Public / Internal / Confidential / Restricted — with role-based access on the AuditLog. <b>Breach Notification Protocol:</b> 6-hour containment → 24-hour PD-authority notification → 72-hour ICT Division/a2i incident report.</li>
 </ul></section>
 
 <section id="s19"><h3><span class="n">19.</span>ADP Phasing (Tk lakh) <span class="bn">বার্ষিক ফেজিং</span></h3>
