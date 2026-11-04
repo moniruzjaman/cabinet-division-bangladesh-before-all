@@ -42,11 +42,11 @@ Bangladesh spends ~Tk 17,001 crore per year on fertilizer subsidy — close to 8
 
 ## Solution architecture
 
-Four layers, one grid, one package, one char promise:
+Four layers, one grid, one package, one char promise *(updated per FC Signed Guidelines dated 20 September 2026)*:
 
-- **Layer 1 — Identity & Land:** 566,202 families on the Krishak Card, biometric + parcel-linked via UP single-window desks.
-- **Layer 2 — Point of Sale:** 116 biometric PoS terminals across 107 outlets + 9 upazila servers + district mirror; offline-first, Bangla voice UI.
-- **Layer 3 — Tracking & Transparency:** Central Digital Ledger (permissioned blockchain), public dashboard, automated leakage alerts, quarterly public reports.
+- **Layer 1 (§4.1) — Identity & Land:** 566,202 families on the Krishak Card, biometric + parcel-linked via UP single-window desks. Mandatory **e-KYC** — NID biometric verification must pass *before* any card is issued. Adopts the FC household (**খানা**) definition: one khana = one Farmer Card. Khana classified by FC land thresholds: **Marginal ≤50 শতাংশ · Small 50–500 · Medium 500–1,500 · Large >1,500**. Field capture via **Kobo Toolbox/ODK**; **four-tier validation workflow: UP → Upazila → District → National**.
+- **Layer 2 (§4.2) — Point of Sale:** 116 biometric PoS terminals across 107 outlets + 9 upazila servers + district mirror; offline-first, Bangla voice UI. Every PoS transaction prints a **farmer-facing QR-code receipt** (transaction hash, quantity, MRP vs paid price, subsidy share); every outlet is **GPS geo-tagged** with geofence checks rejecting off-site transactions.
+- **Layer 3 (§4.3) — Tracking & Transparency:** Central Digital Ledger (permissioned blockchain) with explicit **backward traceability (import → warehouse → dealer)** and **forward traceability (dealer → application → yield)**, public dashboard, automated leakage alerts, quarterly public reports.
 - **Layer 4 — Advisory:** Land-based Soil Health Grid (11,087 tests → 436,902 digital SHCs); SRDI full-profile @ Tk 1,500; USSD/SMS Bangla advisory.
 - **Cross-cutting:** Modified One-Must-One-Should (1,314 demos, 56,620 lead farmers ≥50% women, 187 SAAOs retrained) + char promise (107 solar SIPs, 9 speedboats, 9 collection centres, 100,000 saplings, BRRI dhan 111/114).
 
@@ -67,7 +67,7 @@ The proposed journey: Import/BADC → local server + biometric PoS → farmer's 
 | C9 Collection centres (9 × Tk 25 lakh) | 225.0 |
 | C2 Software + 2-yr O&M | 220.0 |
 | C11 Governance & audit (incl. 3rd-party performance audit) | 191.0 |
-| C10 e-voucher MFS gateway | 131.1 |
+| C10 e-Voucher — crop-specific, land-linked digital instrument redeemable only at verified PoS (MFS gateway) | 131.1 |
 | C1 Digital infrastructure (116 PoS + 9+1 servers) | 101.7 |
 | C7 Advisory comms (27.2M SMS/USSD) | 95.1 |
 | **Subtotal** | **3,590.5** |
@@ -85,7 +85,11 @@ Steady-state (Year 4+): **≈ Tk 78.9 crore/yr** — leakage recovery Tk 36.0 Cr
 
 ## Governance
 
-Five tiers, no parallel bureaucracy: (1) Steering Committee chaired by Secretary MoA; (2) PMU at DAE Kurigram (14 staff, Deputy Director as PD); (3) Union Parishad single-window desks; (4) Oversight Committee (farmers, civil society, UP chairs, experts → quarterly public reports to the Manifesto Implementation Committee); (5) Technical partners (SRDI, BARI/BRRI, BADC, a2i/ICT). Three-layer audit: real-time ledger, annual C&AG, annual independent performance audit (C11, outcome-based).
+Five tiers, no parallel bureaucracy: (1) Steering Committee chaired by Secretary MoA; (2) PMU at DAE Kurigram (14 staff, Deputy Director as PD); (3) Union Parishad single-window desks; (4) Oversight Committee (farmers, civil society, UP chairs, experts → quarterly public reports to the Manifesto Implementation Committee); (5) Technical partners (SRDI, BARI/BRRI, BADC, a2i/ICT). Three-layer audit: real-time ledger, annual C&AG, annual independent performance audit (C11, outcome-based). **Funds flow (§7):** ADP release → PMU designated account over **iBAS++** rails; subsidy disbursements route through **NPSB TakaPay** as the interoperable national switch (banks + MFS wallets on one rail), per FC Signed Guidelines dated 20 September 2026.
+
+### Data governance (§10.5 — NEW)
+
+Four-tier data classification: **Public** (aggregate dashboards, transparency reports) · **Internal** (operational MIS, procurement) · **Confidential** (farmer PII, NID hashes, parcel ownership, accounts) · **Restricted** (biometric templates, keys, ledger signing material). **Data Breach Notification Protocol:** containment within **6 hours** → notification to the **PD (Personal Data Protection) authority within 24 hours** → full incident report to **ICT Division/a2i within 72 hours**, remediation report to Steering Committee next quarter.
 
 ## The seven signatures
 
@@ -94,14 +98,25 @@ Seven signatures, no new legislation, one budget cycle. Each action unlocks the 
 1. Issue the biometric PoS circular — within 90 days
 2. Complete 100% Farmer Card enrolment — within 12 months
 3. Link stock allocation to BDS/EDLMS land data — by Boro 2026-27
-4. Approve KIFGP at Tk 3,949.6 lakh in ADP FY 2026-27
+4. Approve KIFGP at Tk 3,949.6 lakh in ADP FY 2026-27 — in full compliance with the FC Signed Guidelines dated 20 September 2026 (খানা definition, land thresholds, e-KYC; see §4.1, §7).
 5. Adopt the land-based Soil Health Grid
 6. Launch Modified One-Must-One-Should
 7. Sanction the char resilience & market package
 
 ## The digital governance stack
 
-The integrity layer is **not on the critical path of new development.** The companion `e-bill-system` repository (vendored at `reference-repos/e-bill-system/`) carries a Prisma data model already purpose-built for fertilizer subsidy governance: `User` (NID hash, KYC), `Dealer` (geofencing), `Fertilizer` (subsidy %, season cap), `Transaction` (SHA-256 hash, blockchain flag, QR reference, geofence), `SoilHealthCard` (N/P/K/pH/OM), `AuditLog` (who/what/when/IP). The reform's Central Digital Ledger, public dashboard, leakage alerts and QR receipts all map to fields that already exist in working code.
+The integrity layer is **not on the critical path of new development.** The companion `e-bill-system` repository (vendored at `reference-repos/e-bill-system/`) carries a Prisma data model already purpose-built for fertilizer subsidy governance: `User` (NID hash, **e-KYC status tiers PENDING → VERIFIED → ACTIVE → SUSPENDED** — only ACTIVE users may draw subsidised fertilizer), `Dealer` (geofencing + GPS geo-tagged outlet), `Fertilizer` (subsidy %, season cap), `Transaction` (SHA-256 hash, blockchain flag, geofence; the **QR-code reference generates the farmer-facing scannable receipt printed at every PoS transaction**), `SoilHealthCard` (N/P/K/pH/OM), `AuditLog` (who/what/when/IP). The reform's Central Digital Ledger, public dashboard, leakage alerts and QR receipts all map to fields that already exist in working code.
+
+## Beneficiary targeting — FC land thresholds (Annex B)
+
+| Category | Count | Land threshold (শতাংশ) | Targeting weight |
+|---|---:|---|---:|
+| Marginal | 182,319 | ≤50 শতাংশ (≤0.20 acre) | 35.85% |
+| Small | 206,382 | 50–500 শতাংশ (0.20–2.00 acre) | 40.58% |
+| Medium | 45,708 | 500–1,500 শতাংশ (2.00–6.05 acre) | 9.00% |
+| Large | 2,493 | >1,500 শতাংশ (>6.05 acre) | 0.49% |
+
+Marginal + small khana (খানা, per FC household definition) together carry 76.4% of targeting weight.
 
 ---
 
