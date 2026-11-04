@@ -1,6 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Bangladesh Before All emblem">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <rect width="64" height="64" rx="12" fill="#051d15"/>
-  <rect x="1.5" y="1.5" width="61" height="61" rx="10.5" fill="none" stroke="#d4af5e" stroke-opacity="0.55" stroke-width="1.2"/>
-  <path d="M32 12c-1 6-5 10-9 12 4 2 8 6 9 12 1-6 5-10 9-12-4-2-8-6-9-12z" fill="#d4af5e"/>
-  <path d="M20 40c2 6 6 10 12 12 6-2 10-6 12-12-4 2-8 4-12 4s-8-2-12-4z" fill="#3DDBB5"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0d492"/>
+      <stop offset="1" stop-color="#d4af5e"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#g)" stroke="#a8842f" stroke-width="0.4">
+  <path d="M32 54 C 31 40, 30 28, 30 16" stroke="url(#g)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <line x1="32.0" y1="50.0" x2="25.9" y2="45.7" stroke="url(#g)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="32.0" y1="50.0" x2="38.1" y2="45.7" stroke="url(#g)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="32.0" y1="43.2" x2="26.4" y2="39.3" stroke="url(#g)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="32.0" y1="43.2" x2="37.6" y2="39.3" stroke="url(#g)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="32.0" y1="36.4" x2="27.0" y2="32.9" stroke="url(#g)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="32.0" y1="36.4" x2="37.0" y2="32.9" stroke="url(#g)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="32.0" y1="29.6" x2="27.5" y2="26.5" stroke="url(#g)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="32.0" y1="29.6" x2="36.5" y2="26.5" stroke="url(#g)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="32.0" y1="22.8" x2="28.1" y2="20.0" stroke="url(#g)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="32.0" y1="22.8" x2="35.9" y2="20.0" stroke="url(#g)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="32.0" y1="16.0" x2="28.6" y2="13.6" stroke="url(#g)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="32.0" y1="16.0" x2="35.4" y2="13.6" stroke="url(#g)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="30" y1="16" x2="27.9" y2="11.5" stroke="url(#g)" stroke-width="1.4" stroke-linecap="round"/>
+  <line x1="30" y1="16" x2="30.0" y2="11.0" stroke="url(#g)" stroke-width="1.4" stroke-linecap="round"/>
+  <line x1="30" y1="16" x2="32.1" y2="11.5" stroke="url(#g)" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+  <rect x="2.5" y="2.5" width="59" height="59" rx="10" fill="none" stroke="#d4af5e" stroke-width="0.5" opacity="0.35"/>
 </svg>
