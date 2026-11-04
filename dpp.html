@@ -229,6 +229,21 @@ footer p{font-size:12.5px;margin-bottom:8px;line-height:1.6}
   .cover h1{font-size:23px}
 }
 
+/* ===== companion deployments ===== */
+.comp{background:linear-gradient(135deg,var(--card),#f6f1e4);border:1px solid var(--line);border-radius:14px;padding:24px 26px;margin:34px 0 10px;scroll-margin-top:100px}
+.comp-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.comp-head h3{margin:0;font-size:20px}
+.comp-head .tag{font-size:12px;color:var(--muted)}
+.comp-lead{font-size:13.5px;color:var(--ink);margin-bottom:16px;max-width:780px}
+.comp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.comp-card{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:11px;background:#fff;text-decoration:none;transition:.22s;position:relative}
+.comp-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 14px 28px -14px rgba(7,39,28,.28)}
+.comp-card .cc-no{position:absolute;top:12px;right:14px;font-family:var(--serif);font-weight:900;font-size:15px;color:var(--gold);opacity:.55}
+.comp-card .cc-title{display:block;font-weight:800;font-size:14px;color:var(--g900);margin-bottom:5px;padding-right:24px}
+.comp-card .cc-url{display:block;font-size:11px;color:var(--goldD);font-family:'SFMono-Regular',Consolas,monospace;margin-bottom:7px;word-break:break-all}
+.comp-card .cc-sup{display:block;font-size:12px;color:var(--muted);line-height:1.5}
+.comp-card .cc-sup b{color:var(--g700);font-weight:700}
+
 /* ===== print ===== */
 @media print{
   .classbar,.topbar,nav.toc,.prog,.btt,.ax-controls{display:none!important}
@@ -320,6 +335,7 @@ footer p{font-size:12.5px;margin-bottom:8px;line-height:1.6}
   <a href="#s15">15 Components</a><a href="#s16">16 Implementation</a><a href="#s17">17 Procurement</a><a href="#s18">18 FM &amp; Gates</a><a href="#s19">19 Phasing</a>
   <a href="#s20">20 LogFrame</a><a href="#s21">21 Economics</a><a href="#s22">22 Sustainability</a><a href="#s23">23 Risks</a><a href="#s24">24 M&amp;E</a><a href="#s25">25 Certification</a>
   <a href="#annex">Annex A–H</a>
+  <a href="#companion">🌐 Companion deployments</a>
 </div></nav>
 
 <main><div class="wrap">
@@ -742,6 +758,41 @@ footer p{font-size:12.5px;margin-bottom:8px;line-height:1.6}
 <div class="note">In the enduring spirit of <b>Bir Uttam President Ziaur Rahman</b> — Father of Bangladeshi Nationalism — who sought not merely political independence but true economic dignity for the Krishak: this project is drafted as an instrument of that sovereignty, disciplined in governance, empowering in method, self-reliant in outcome.</div>
 </div></details>
 
+<!-- ===== companion deployments (live supporting evidence) ===== -->
+<div class="comp" id="companion">
+  <div class="comp-head">
+    <h3>🌐 Companion deployments — supporting this proforma online</h3>
+    <span class="tag">Four live GitHub Pages sites · each backs a specific part of this DPP</span>
+  </div>
+  <p class="comp-lead">This proforma does not stand alone. Four companion web deployments — already live — supply the strategic narrative, the ministerial decision package, the public-facing briefing, and the working integrity layer that the proforma formalises. Each is mapped below to the DPP section it supports, so a reader (PEC, Finance Division, or Cabinet) can verify any claim against its live source in one click.</p>
+  <div class="comp-grid">
+    <a class="comp-card" href="https://moniruzjaman.github.io/fertilizer/" target="_blank" rel="noopener">
+      <span class="cc-no">01</span>
+      <span class="cc-title">Fertilizer — Burden to Bloom</span>
+      <span class="cc-url">moniruzjaman.github.io/fertilizer/</span>
+      <span class="cc-sup">The Ministry of Agriculture's strategic communications portfolio — ministerial briefing, interactive dashboard, decision memo, editorial, and four reference PDFs (Path to Bloom, From Fertilizer Security to Farming Security, Sar-Sarvabhaumer-Gobhire, Soil 12-parameter). <b>Supports DPP §9 (priority justification) &amp; §10 (background &amp; rationale).</b></span>
+    </a>
+    <a class="comp-card" href="https://moniruzjaman.github.io/fertilizer-reform/" target="_blank" rel="noopener">
+      <span class="cc-no">02</span>
+      <span class="cc-title">Fertilizer Distribution Reform</span>
+      <span class="cc-url">moniruzjaman.github.io/fertilizer-reform/</span>
+      <span class="cc-sup">The Comprehensive Strategic Report and decision memorandum presented to the Minister: the biometric PoS mandate, divisional pilots, and subsidy-targeting reform. <b>Supports DPP §11 (problem &amp; needs analysis) &amp; §17 (procurement plan).</b></span>
+    </a>
+    <a class="comp-card" href="https://moniruzjaman.github.io/fertilizer-nationalism/" target="_blank" rel="noopener">
+      <span class="cc-no">03</span>
+      <span class="cc-title">Bangladesh Before All — KIFGP briefing</span>
+      <span class="cc-url">moniruzjaman.github.io/fertilizer-nationalism/</span>
+      <span class="cc-sup">The flagship interactive public briefing for the September 2026 Ministry of Agriculture session — the seven-signature action plan and the source DPP from which this proforma is derived. <b>Supports DPP §6 (objectives) &amp; §8 (alignment with national priorities).</b></span>
+    </a>
+    <a class="comp-card" href="https://moniruzjaman.github.io/e-bill-system/" target="_blank" rel="noopener">
+      <span class="cc-no">04</span>
+      <span class="cc-title">E-Bill System — subsidy ledger</span>
+      <span class="cc-url">moniruzjaman.github.io/e-bill-system/</span>
+      <span class="cc-sup">A Next.js 16 + Prisma + PostgreSQL application whose data model is already purpose-built for fertilizer subsidy governance: NID-hashed Users, geofenced Dealers, subsidy-capped Fertilizers, SHA-256 / blockchain-flagged Transactions, SoilHealthCard and AuditLog tables. <b>Supports DPP components C1–C2 (digital infrastructure &amp; software stack) and §18 (financial management, real-time audit &amp; gates) — the integrity layer exists as working code, not a proposal.</b></span>
+    </a>
+  </div>
+</div>
+
 </div></main>
 
 <!-- ===== footer ===== -->
@@ -796,7 +847,7 @@ var spy = new IntersectionObserver(function(es){
     }
   });
 }, {rootMargin:'-30% 0px -60% 0px'});
-document.querySelectorAll('section[id], .part[id]').forEach(function(s){ spy.observe(s); });
+document.querySelectorAll('section[id], .part[id], .comp[id]').forEach(function(s){ spy.observe(s); });
 
 /* ===== budget lens switcher (§15) ===== */
 document.querySelectorAll('#lensTabs button').forEach(function(btn){

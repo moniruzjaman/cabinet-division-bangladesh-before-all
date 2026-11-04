@@ -153,6 +153,9 @@ a{color:inherit}
 .card .card-meta b{color:var(--g700);font-weight:800}
 .card-link{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;color:var(--g700);text-decoration:none;margin-top:10px}
 .card-link:hover{color:var(--goldD)}
+.card-live{display:inline-flex;align-items:center;gap:6px;font-weight:800;font-size:12px;color:var(--g900);text-decoration:none;margin-top:10px;padding:6px 12px;border-radius:8px;border:1px solid var(--gold);background:rgba(212,175,94,.14);transition:.2s;width:fit-content}
+.card-live:hover{background:linear-gradient(160deg,var(--gold2),var(--gold));transform:translateY(-1px);box-shadow:0 6px 14px -6px rgba(212,175,94,.6)}
+.card-live svg{width:13px;height:13px;flex:none}
 .card-link svg{width:14px;height:14px}
 
 /* ---------- actions (7 signatures) ---------- */
@@ -443,24 +446,28 @@ a{color:inherit}
         <h3>Fertilizer — Burden to Bloom</h3>
         <p>The Ministry of Agriculture's static reform portfolio: a ministerial briefing, an interactive dashboard, a decision memo, an editorial, and four reference PDFs (Path to Bloom report, From Fertilizer Security to Farming Security, Sar-Sarvabhaumer-Gobhire, Soil 12-parameter). Inbox-driven site builder, 26 tests.</p>
         <div class="card-meta"><span>9 published pages</span><b>fertilizer/</b></div>
+        <a class="card-live" href="https://moniruzjaman.github.io/fertilizer/" target="_blank" rel="noopener">🌐 View live deployment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
       </div>
       <div class="card">
         <span class="ctype">Reform package</span>
         <h3>Fertilizer Distribution Reform</h3>
         <p>Single self-contained decision page presenting the Distribution Reform Package to the Minister: the biometric PoS mandate, divisional pilots, and subsidy-targeting reform. One HTML file, no build step — ready for the Minister's signature.</p>
         <div class="card-meta"><span>Decision artefact</span><b>fertilizer-reform/</b></div>
+        <a class="card-live" href="https://moniruzjaman.github.io/fertilizer-reform/" target="_blank" rel="noopener">🌐 View live deployment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
       </div>
       <div class="card">
         <span class="ctype">Flagship briefing &amp; DPP</span>
         <h3>Bangladesh Before All — KIFGP</h3>
         <p>The flagship interactive landing page for the Ministry of Agriculture briefing (Sept 2026): the full Kurigram Integrated Fertilizer Governance &amp; Farmer Card Pilot, with the seven-signature action plan and the IMED-format Development Project Proforma (dpp.html).</p>
         <div class="card-meta"><span>Briefing + DPP</span><b>fertilizer-nationalism/</b></div>
+        <a class="card-live" href="https://moniruzjaman.github.io/fertilizer-nationalism/" target="_blank" rel="noopener">🌐 View live deployment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
       </div>
       <div class="card">
         <span class="ctype">Operational ledger</span>
         <h3>E-Bill System — subsidy ledger</h3>
         <p>A Next.js 16 + Prisma + PostgreSQL application whose data model is already purpose-built for fertilizer subsidy governance: User (NID hash, KYC), Dealer (geofencing), Fertilizer (subsidy %, season cap), Transaction (SHA-256 hash, blockchain flag, QR), SoilHealthCard, AuditLog. The integrity layer exists as working code.</p>
         <div class="card-meta"><span>Deployable stack</span><b>e-bill-system/</b></div>
+        <a class="card-live" href="https://moniruzjaman.github.io/e-bill-system/" target="_blank" rel="noopener">🌐 View live deployment <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></a>
       </div>
     </div>
   </div>
@@ -670,6 +677,32 @@ a{color:inherit}
           <a class="btn btn-ghost" href="docs/proposal/Cabinet_Division_KIFGP_Proposal.docx" download>Download .docx</a>
           <a class="btn btn-ghost" href="docs/proposal/PROJECT_PROPOSAL.md" style="font-size:12px">Read markdown summary</a>
         </div>
+      </div>
+    </div>
+
+    <!-- companion deployments strip -->
+    <div style="margin-top:20px;background:linear-gradient(135deg,#fffdf6,#f6f1e4);border:1px solid var(--line);border-radius:14px;padding:22px 26px">
+      <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px">
+        <h4 style="font-family:var(--serif);font-weight:900;font-size:17px;color:var(--g800);margin:0">🌐 Supported by four live companion deployments</h4>
+        <span style="font-size:12px;color:var(--muted)">Each is already live on GitHub Pages and backs a specific part of this proforma.</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px">
+        <a href="https://moniruzjaman.github.io/fertilizer/" target="_blank" rel="noopener" style="display:block;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;text-decoration:none;transition:.2s" onmouseover="this.style.borderColor='var(--gold)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--line)';this.style.transform='none'">
+          <b style="display:block;font-size:13px;color:var(--g900)">Fertilizer — Burden to Bloom</b>
+          <span style="font-size:11.5px;color:var(--muted)">Strategic narrative · backs DPP §9–10 (justification &amp; rationale)</span>
+        </a>
+        <a href="https://moniruzjaman.github.io/fertilizer-reform/" target="_blank" rel="noopener" style="display:block;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;text-decoration:none;transition:.2s" onmouseover="this.style.borderColor='var(--gold)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--line)';this.style.transform='none'">
+          <b style="display:block;font-size:13px;color:var(--g900)">Fertilizer Distribution Reform</b>
+          <span style="font-size:11.5px;color:var(--muted)">Minister's decision package · backs §11 &amp; §17 (problem &amp; procurement)</span>
+        </a>
+        <a href="https://moniruzjaman.github.io/fertilizer-nationalism/" target="_blank" rel="noopener" style="display:block;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;text-decoration:none;transition:.2s" onmouseover="this.style.borderColor='var(--gold)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--line)';this.style.transform='none'">
+          <b style="display:block;font-size:13px;color:var(--g900)">Bangladesh Before All — KIFGP</b>
+          <span style="font-size:11.5px;color:var(--muted)">Flagship public briefing · backs §8 (national alignment)</span>
+        </a>
+        <a href="https://moniruzjaman.github.io/e-bill-system/" target="_blank" rel="noopener" style="display:block;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;text-decoration:none;transition:.2s" onmouseover="this.style.borderColor='var(--gold)';this.style.transform='translateY(-2px)'" onmouseout="this.style.borderColor='var(--line)';this.style.transform='none'">
+          <b style="display:block;font-size:13px;color:var(--g900)">E-Bill System — subsidy ledger</b>
+          <span style="font-size:11.5px;color:var(--muted)">Working integrity layer · backs C1–C2 &amp; §18 (digital infra &amp; audit)</span>
+        </a>
       </div>
     </div>
   </div>
